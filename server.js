@@ -9,7 +9,7 @@ const app = express()
 
 mongoose.connect('mongodb://localhost/blog', {
   useNewUrlParser: true, useUnifiedTopology: true, useCreateIndex: true
-}) .then(() => 'You are now connected to Mongo!')
+}) .then(() =>console.log('You are now connected to Mongo!'))
 .catch(err => console.error('Something went wrong', err))
 
 app.set('view engine', 'ejs')
